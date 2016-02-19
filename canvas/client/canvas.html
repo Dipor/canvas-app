@@ -1,11 +1,28 @@
 <template name="leanCanvas">
   <div class="page-header">
-    <button
-      id="edit-canvas"
-      type="button"
-      class="btn btn-success pull-right">
-      Edit
-    </button>
+    {{# if editMode }}
+      <div class="btn-group pull-right" role="group" aria-label="save or edit">
+        <button
+          id="edit-canvas"
+          type="button"
+          class="btn btn-success">
+          Save
+        </button>
+        <button
+          id="edit-canvas"
+          type="button"
+          class="btn btn-danger">
+          Cancel
+        </button>
+      </div>
+    {{ else }}
+      <button
+        id="edit-canvas"
+        type="button"
+        class="btn btn-success pull-right">
+        Edit
+      </button>
+    {{/ if }}
     <h1>
       Create a Lean Canvas
     </h1>
