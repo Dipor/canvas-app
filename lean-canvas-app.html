@@ -1,9 +1,11 @@
-<head>
-  <title>Lean Canvas app</title>
-</head>
+<template name="canvasAppMainLayout">
+  <head>
+    <title>Lean Canvas app</title>
+  </head>
 
-<body>
-  <div class="container-fluid">
-    {{> leanCanvas }}
-  </div>
-</body>
+  <body>
+    <div class="container-fluid">
+      {{> Template.dynamic template=content }}
+    </div>
+  </body>
+</template>
