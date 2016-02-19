@@ -22,3 +22,4 @@ twbs:bootstrap
 fortawesome:fontawesome
 mizzao:jquery-ui
 reactive-var
+kadira:flow-router
